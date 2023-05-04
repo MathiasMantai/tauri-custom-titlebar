@@ -12,7 +12,8 @@ In your projects tauri.conf.json, add the following to allow the use of a custom
             "startDragging": true,
             "maximize": true,
             "unmaximize": true,
-            "minimize": true
+            "minimize": true,
+            "close": true
         },
     }
 },

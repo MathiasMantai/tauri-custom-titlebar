@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWindowMinimize, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faWindowMinimize, faXmark, faSquare } from '@fortawesome/free-solid-svg-icons';
 import { appWindow } from '@tauri-apps/api/window'
 
 
@@ -41,7 +41,7 @@ const Titlebar = () => {
                     />
                 </li>
                 <li 
-                    className='hover:bg-[#303049] px-2 py-2 cursor-pointer' 
+                    className='hover:bg-[#303049] px-2 py-1 cursor-pointer' 
                     onClick={maximizeWindow}>
                         <FontAwesomeIcon 
                             icon={faSquare} 

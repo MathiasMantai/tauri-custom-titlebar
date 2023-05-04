@@ -9,7 +9,10 @@ In your projects tauri.conf.json, add the following to allow the use of a custom
 "tauri": {
     "allowlist": {
         "window": {
-            "startDragging": true
+            "startDragging": true,
+            "maximize": true,
+            "unmaximize": true,
+            "minimize": true
         },
     }
 },

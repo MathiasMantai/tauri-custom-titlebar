@@ -3,7 +3,7 @@
 - Fontawesome Icons (https://fontawesome.com/v6/docs/web/use-with/react/)
 
 ## How to use
-In your projects tauri.conf.json, add the following to allow draggable regions:
+In your projects tauri.conf.json, add the following to allow the use of a custom titlebar:
 
 ```
 "tauri": {

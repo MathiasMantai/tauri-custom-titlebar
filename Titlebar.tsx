@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowMinimize, faXmark, faSquare } from '@fortawesome/free-solid-svg-icons';
 import { appWindow } from '@tauri-apps/api/window'
+import { TitlebarProps } from './Titlebarprops';
 
 
 
-const Titlebar = () => {
+const Titlebar = (props: TitlebarProps) => {
     
     const minimizeWindow = async () => {
         await appWindow.minimize();
@@ -27,7 +28,7 @@ const Titlebar = () => {
                 data-tauri-drag-region 
                 className='px-2 py-1'
             >
-                Title of your App
+                {props.title}
             </div>
             <ul className='flex'>
                 <li 
